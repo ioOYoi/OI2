@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>古诗词调查问卷</title>
+</head>
+<body>
+    <!-- 插入诗人草像 -->
+    <img src="logo.png" alt="诗人草像" />
+    <!-- 主目录部分 -->
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li>李白</li>
+            <li>杜甫</li>
+            <li>白居易</li>
+            <li><a href="#">调查问卷</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        table {
+            width: 60%;
+            background-image: url('tableBg.jpg'); /* 设置背景图片 */
+            background-size: cover;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+
+    <form action="ok.html" method="POST">
+        <table border="1" >
+            <tr>
+    <td colspan="2" style="text-align: center; font-weight: bold; font-size: 24px;">古诗词调查问卷</td>
+</tr>
+            <tr>
+                <td colspan="2">自春秋萌芽，到唐宋巅峰。古诗词作为我们中华文明的见证者！<br>亲爱的朋友们，为了更好的弘扬国学经典，下面我们想通过这份调查问卷来了解你对古诗词的了解程度以及对古诗词的兴趣。</td>
+            </tr>
+            <tr>
+                <td>您的职业类别：</td>
+                <td>
+                    <select multiple="multiple" name="job">
+                        <option value="在校学生">在校学生</option>
+                        <option value="在职人员">在职人员</option>
+                        <option value="农民">农民</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>您的性别：</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="男">
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="gender" value="女">
+                    <label for="female">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>QQ号：</td>
+                <td><input type="number" name="qq" min="10000" max="99999999999" placeholder="请输入您的QQ号"></td>
+            </tr>
+            <tr>
+                <td>邮箱：</td>
+                <td><input type="email" name="email" placeholder="请输入您的邮箱"></td>
+            </tr>
+            <tr>
+                <td>您的教育程度：</td>
+                    <td>
+                        <input type="radio" id="primary" name="education" value="小学">
+                             <label for="primary">小学</label>
+
+                        <input type="radio" id="middle" name="education" value="中学">
+                             <label for="middle">中学</label>
+
+                        <input type="radio" id="bachelor" name="education" value="本科">
+                             <label for="bachelor">本科</label>
+
+                        <input type="radio" id="master" name="education" value="硕士研究生">
+                             <label for="master">硕士研究生</label>
+
+                        <input type="radio" id="doctor" name="education" value="博士及以上">
+                             <label for="doctor">博士及以上</label>
+                 </td>
+            </tr>
+
+            <tr>
+                <td>您的年龄段：</td>
+                <td>
+                    <select name="age">
+                        <option value="18-35岁">18-35岁</option>
+                        <option value="35岁以上">35岁以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+    <td>您每周的诗词阅读量(0-50首之间) </td>
+    <td>
+    <input type="radio" id="primary" name="education" value="小学">
+    <label for="primary"> 10首诗以内</label>
+
+    <input type="radio" id="middle" name="education" value="中学">
+    <label for="middle">10~20首诗</label>
+
+    <input type="radio" id="bachelor" name="education" value="本科">
+    <label for="bachelor">20~30首诗</label>
+
+    <input type="radio" id="master" name="education" value="硕士研究生">
+    <label for="master">30首诗以上</label>
+    </td>
+</tr>
+            <tr>
+                <td>您喜欢哪些诗人？（可多选）</td>
+                <td>
+                    <input type="checkbox" name="author" value="李白"> 李白
+                    <input type="checkbox" name="author" value="杜甫"> 杜甫
+                    <input type="checkbox" name="author" value="刘禹锡"> 刘禹锡
+                    <input type="checkbox" name="author" value="苏轼"> 苏轼<br>
+                    <input type="checkbox" name="author" value="王昌龄"> 王昌龄
+                    <input type="checkbox" name="author" value="李贺"> 李贺
+                    <input type="checkbox" name="author" value="刘禹锡"> 刘禹锡
+                    <input type="checkbox" name="author" value="孟浩然"> 孟浩然
+                </td>
+            </tr>
+            <tr>
+                <td>请为本网站打分(满分5分,最低0分)  </td>
+                <td><input type="range" name="score" min="0" max="5"></td>
+            </tr>
+            <tr>
+                <td>对于本站网页优化您有什么更好的建议吗？
+（请提交标有修改意见的网页截图）</td>
+                <td><input type="file" name="file-upload"></td>
+            </tr>
+            <tr>
+                <td>您接触古诗词的时间</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>对于弘扬国学，弘扬传统诗词文化，您有什么独到见解？   </td>
+                <td><textarea name="feedback" rows="4" cols="50"></textarea></td>
+            </tr>
+              <tr>
+                <td colspan="2"style="text-align: center; font-weight: bold;" ><button type="submit">提交</button><button type="reset">重置</button></td>
+            </tr>
+        </table>
+        <br>
+    </form>
+
+    <!-- 页尾部分 -->
+    <footer>
+        <ul>
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="mailto:ise_webteam@ujn.edu.cn">联系我们</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">隐私声明</a></li>
+            <li><a href="#">意见反馈</a></li>
+        </ul>
+        <p><a href="http://www.ujn.edu.cn"><em>Copyright 济南大学Web前端课程团队</em></a></p>
+        <p>write by 2021015429欧阳志昊 </p>
+    </footer>
+</body>
+</html>
